@@ -12,8 +12,9 @@ if (storedData && storedData.length < data.length) {
 }
 
 const inputHandler = function (e) {
-  isValid = btoa(e.target.value) === owner && isb2a;
-  if (isValid) {
+  const checkValid = btoa(e.target.value) === owner && isb2a;
+  if (checkValid) {
+    isValid = true;
     showLinks();
   }
 
@@ -72,6 +73,8 @@ function showLinks() {
       genericLI.appendChild(genericLabel);
 
       var itemUL = document.createElement("ul");
+      itemUL.className = "flex-item";
+
       for (var i = 0; i < groupByGeneric[gen_prop].length; i++) {
         let li = document.createElement("li");
         li.className = "list";
@@ -99,7 +102,8 @@ function showLinks() {
 function addToStorage() {
   const dataToStore = document.getElementById("encryptOutput").innerHTML;
   //const itemName = prompt("Enter the name");
-  openModal().then((item) => {
+  const model = new ModelPopup();
+  model.openModal().then((item) => {
     if (item) {
       data.push({
         id: dataToStore,

@@ -2,6 +2,10 @@ body {
   margin: 5vh 13vw;
 }
 
+#encryptOutput {
+  word-wrap: break-word;
+}
+
 button {
   cursor: pointer;
   border: none;

@@ -8,7 +8,7 @@ function expandCollapseBind() {
   var exp_li = document.querySelectorAll(".collapse-able li > span");
   for (var i = 0; i < exp_li.length; i++) {
     exp_li[i].style.cursor = "pointer";
-    exp_li[i].onclick = showul;
+    exp_li[i].onclick = showUL;
   }
 
   clearTimeout(timeout);
@@ -16,8 +16,12 @@ function expandCollapseBind() {
 }
 
 
-function showul() {
-  nextul = this.nextElementSibling;
-  if (nextul.style.display == "block") nextul.style.display = "none";
-  else nextul.style.display = "block";
+function showUL() {
+  const nextUL = this.nextElementSibling;
+  if(nextUL.className?.indexOf('flex-item') && nextUL.style.display !== "flex")
+    nextUL.style.display = "flex";
+  else if (nextUL.style.display === "block" || nextUL.style.display === "flex") 
+    nextUL.style.display = "none";
+  else 
+    nextUL.style.display = "block";
 }
