@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <script>
+      const owner = "YW51cA==";
+    </script>
+    <link rel="stylesheet" href="css/page.css" />
+    <link rel="stylesheet" href="css/list.css" />
+    <link rel="stylesheet" href="css/popup.css" />
+  </head>
+  <body>
+    <div style="text-align: center">
+      <div class="converter">
+        <input
+        placeholder="Enter URL to encrypt"
+        style="width: 70vw; padding: 5px"
+        id="source"
+      />
+      <button
+        id="add-button"
+        style="display: none"
+        onclick="addToStorage()"
+        class="btn-page"
+      >
+        Save
+      </button>
+      </div>
+      <span id="encryptOutput"></span>
+      <button
+        id="copy-button"
+        style="display: none"
+        onclick="copyToClipBoard()"
+        class="btn-page"
+      >
+        Copy
+      </button>
+    </div>
+    <div id="container"></div>
+
+    <div>
+      <button id="copyTheUpdates" class="btn-page" style="display: none" onclick="copyDataToClipBoard()">Copy latest data</button>
+    </div>
+    <section class="modal hidden">
+      <div style="text-align: right">
+        <button class="btn-close">⨉</button>
+      </div>
+      <input type="text" id="name" placeholder="Enter Name" />
+      <select id="rootOptions">
+        <option>Select Root</option>
+      </select>
+      <select id="genericOptions">
+        <option>Select Generic</option>
+      </select>
+      <br />
+      <button class="btn" id="submit-btn">Submit</button>
+    </section>
+
+    <div class="overlay hidden"></div>
+
+    <script type="text/javascript" src="js/groups.js"></script>
+    <script type="text/javascript" src="js/data.js"></script>
+    <script type="text/javascript" src="js/javascript.js"></script>
+    <script type="text/javascript" src="js/model.js"></script>
+    <script type="text/javascript" src="js/expand-collapse.js"></script>
+  </body>
+</html>

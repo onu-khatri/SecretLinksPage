@@ -1,0 +1,38 @@
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.root-ul .root-li {
+  margin-top: 5px;
+}
+
+li span{
+  display: block;
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid #fff;
+  border-bottom: none;
+}
+
+ul li span{
+  background: #26C281;
+  border-radius: 12px;
+}
+
+ul ul li span{
+  padding: 10px;
+  background: #59ABE3;
+  margin-left: 15px;
+  border-radius: 12px;
+}
+
+ul ul ul li a{
+  padding: 10px;
+    display: block;
+    border: white 1px solid;
+    background: #95e359;
+    border-radius: 12px;
+    margin-left: 30px;
+}

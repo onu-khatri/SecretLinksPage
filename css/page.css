@@ -1,0 +1,33 @@
+body {
+  margin: 5vh 13vw;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-weight: 600;
+}
+
+.btn-page {
+  display: inline-block;
+  padding: 5px 5px;
+  font-weight: 600;
+  background-color: rgb(255, 255, 255);
+  color: rgb(5, 5, 5);
+  border-radius: 5px;
+  border: rgb(44, 44, 44) 1px solid; 
+  text-align: center;
+  font-size: 14px;
+}
+
+#container {
+  min-width: 30vw;
+  width: fit-content;
+  margin:20px 10px
+}
+
+.converter {
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr 56px;
+}
