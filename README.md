@@ -2,11 +2,11 @@
 A web-page to store your secret web-links on local system
 
 # How to use page:
-- index.html: `const owner = "YW51c--"`, get owner-id by javascript code in browser-console: `btoa('your-secret-text')`  and update owner value in index.html
+- Index.html: `const owner = "YW51c--"`, get owner-id by javascript code in browser-console: `btoa('your-secret-text')`  and update owner value in index.html
 - Add url to input-box on the page, and click on the save button.
-- provide name, root, and generic option in model-form.
-- click on 'Copy latest data' button
-- paste data in data.js file. data = {copied text}
+- Provide name, root, and generic option in model-form.
+- Click on 'Copy latest data' button
+- Paste data in data.js file. data = {copied text}
 - To see the decrypted list, reload the page with queryString 'btoa=1' and type your secret-text in input-box.
 
 # Page-Sample:
