@@ -1,7 +1,7 @@
 # SecretLinksPage
 A web-page to store your secret web-links on local system
 
-# How to use page:
+# How to use the page:
 - Index.html: `const owner = "YW51c--"`, get owner-id by javascript code in browser-console: `btoa('your-secret-text')`  and update owner value in index.html
 - Add url to input-box on the page, and click on the save button.
 - Provide name, root, and generic option in model-form.
@@ -11,8 +11,9 @@ A web-page to store your secret web-links on local system
 
 # Page-Sample:
 
-![image](https://github.com/onu-khatri/SecretLinksPage/assets/85816412/c3230540-3b6d-49c0-bf18-12c0eb12ea7a)
+![image](https://github.com/onu-khatri/SecretLinksPage/assets/85816412/fd440497-bb2e-45f3-999d-e83d76b993a7)
 
-# Add an encrypted link to data in localStorage of system:
+# Add an encrypted link to data in LocalStorage of the system:
 
-![image](https://github.com/onu-khatri/SecretLinksPage/assets/85816412/d0d548a2-28fd-4f35-9803-131c7f8097da)
+![image](https://github.com/onu-khatri/SecretLinksPage/assets/85816412/ab697b6a-9446-47b6-9912-952efdebee22)
+
