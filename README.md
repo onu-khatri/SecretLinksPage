@@ -6,7 +6,7 @@ A web-page to store your secret web-links on local system
 - Add url to input-box on the page, and click on the save button.
 - Provide name, root, and generic option in model-form.
 - Click on 'Copy latest data' button
-- Paste data in data.js file. data = {copied text}
+- Paste data in data.js file. `data = {copied text}`
 - To see the decrypted list, reload the page with queryString 'btoa=1' and type your secret-text in input-box.
 
 # Page-Sample:
