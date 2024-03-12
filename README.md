@@ -2,7 +2,7 @@
 A web-page to store your secret web-links on local system
 
 # How to use page:
-- index.html: `const owner = "YW51c--"`; { get owner-id by javascript code in browser-console: `btoa('your-secret-text')`  and update owner value in index.html }
+- index.html: `const owner = "YW51c--"`, get owner-id by javascript code in browser-console: `btoa('your-secret-text')`  and update owner value in index.html
 - Add url to input-box on the page, and click on the save button.
 - provide name, root, and generic option in model-form.
 - click on 'Copy latest data' button
