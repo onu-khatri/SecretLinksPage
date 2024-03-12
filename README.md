@@ -9,11 +9,9 @@ A web-page to store your secret web-links on local system
 - Paste data in data.js file. `data = {copied text}`
 - To see the decrypted list, reload the page with queryString `?btoa=1` and type your secret-text in input-box.
 
-# Page-Sample:
+## Page-Sample:
+<img src="https://github.com/onu-khatri/SecretLinksPage/assets/85816412/fd440497-bb2e-45f3-999d-e83d76b993a7" width="450px" height="350px">
 
-![image](https://github.com/onu-khatri/SecretLinksPage/assets/85816412/fd440497-bb2e-45f3-999d-e83d76b993a7)
-
-# Add an encrypted link to data in LocalStorage of the system:
-
-![image](https://github.com/onu-khatri/SecretLinksPage/assets/85816412/ab697b6a-9446-47b6-9912-952efdebee22)
+## Add an encrypted link to data in LocalStorage of the system:
+<img src="https://github.com/onu-khatri/SecretLinksPage/assets/85816412/ab697b6a-9446-47b6-9912-952efdebee22" width="450px" height="350px">
 
