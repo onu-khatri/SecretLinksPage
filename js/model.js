@@ -33,19 +33,19 @@ class ModelPopup {
   closeModal = (onsuccess = false) => {
     this.modal.classList.add("hidden");
     this.overlay.classList.add("hidden");
-    if(!onsuccess) {
+    if (!onsuccess) {
       this.resolve_action(undefined);
     }
 
     this.removeListener();
   };
 
-  removeListener = function() {
+  removeListener = function () {
     this.submitBtn.removeEventListener("click", this.submitForm);
     this.overlay.removeEventListener("click", this.closeModal);
     this.closeModalBtn.removeEventListener("click", this.closeModal);
     document.removeEventListener("keydown", this.checkEscKeyPress);
-  }
+  };
 
   submitForm = (event$) => {
     const name = document.getElementById("name").value;
@@ -58,25 +58,35 @@ class ModelPopup {
 
   fillGenericOptions() {
     const genericSelect = document.getElementById("genericOptions");
-
-    if (genericSelect && rootGroups) {
-      childGroups.forEach((element) => {
-        const option = document.createElement("option");
-        option.text = atob(element);
-        option.value = element;
-        genericSelect.add(option);
-      });
-    }
+    this.cleanDropdown(genericSelect);
+    this.fillDropDowns(genericSelect, childGroups, "Select Generic");
   }
 
   fillRootOptions() {
     const rootSelect = document.getElementById("rootOptions");
-    if (rootSelect && rootGroups) {
-      rootGroups.forEach((element) => {
+    this.cleanDropdown(rootSelect);
+    this.fillDropDowns(rootSelect, rootGroups, "Select Category");
+  }
+
+  cleanDropdown(selectControl) {
+    const options = selectControl.getElementsByTagName("OPTION");
+
+    for (let i = options.length - 1; i >= 0; i--) {
+      selectControl.removeChild(options[i]);
+    }
+  }
+
+  fillDropDowns(selectControl, groups, defaultOptionText) {
+    const defaultOption = document.createElement("option");
+    defaultOption.text = defaultOptionText;
+    selectControl.add(defaultOption);
+
+    if (groups && groups) {
+      groups.forEach((element) => {
         const option = document.createElement("option");
         option.text = atob(element);
         option.value = element;
-        rootSelect.add(option);
+        selectControl.add(option);
       });
     }
   }
@@ -93,5 +103,5 @@ class ModelPopup {
     if (e.key === "Escape" && !modal.classList.contains("hidden")) {
       modalClose();
     }
-  }
+  };
 }
